@@ -18,7 +18,7 @@ function startGame() {
         let hole = holes.eq(Math.floor(Math.random() * holes.length));
         hole.addClass('up');
 
-        let duration = Math.random() * (1000 - 200) + 200;
+        let duration = Math.random() * (1000 - 200) + 200; // relance entre 200ms et 1s
 
         setTimeout(function() {
             hole.removeClass('up');
